@@ -1,0 +1,33 @@
+// Flex configs
+%center_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%space_between_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%space_evenly_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
+// Text configs
+%header_text {
+  font-family: 'Single Day', cursive;
+
+}
+
+
+// Navbar elements hover 
+@mixin nav_hover($color) {
+  background: $color;
+  color: white;
+}

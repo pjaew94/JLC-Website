@@ -1,0 +1,82 @@
+@import 'config';
+
+.nav_container {
+  height: 10vh;
+  width: 100%;
+  @extend %center_flex;
+
+  .nav_inner_container {
+    height: 100%;
+    width: 65%;
+    @extend %space_between_flex;
+
+    .nav_logo_container {
+      height: 100%;
+      width: 15%;
+      @extend %space_between_flex;
+      font-family: 'Single Day', cursive;
+      font-size: 1.7rem;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+
+      img {
+        height: auto;
+        width: 50px;
+      }
+    }
+
+    ul {
+      height: 100%;
+      width: 60%;
+      list-style-type: none;
+      @extend %space_between_flex;
+
+      li {
+        height: 100%;
+        width: 16%;
+        @extend %center_flex;
+
+        .li {
+          height: 70%;
+          width: 90%;
+          text-decoration: none;
+          color: black;
+          @extend %center_flex;
+          flex-direction: column;
+          transition: all 0.2s ease-in-out;
+
+          h3 {
+            font-family: 'Single Day', cursive;
+            font-size: 1.3rem;
+          }
+
+          span {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+          }
+        }
+
+        .li_1:hover {
+          @include nav_hover(#ffb6b9);
+        }
+        .li_2:hover {
+          @include nav_hover(#4baea0);
+        }
+        .li_3:hover {
+          @include nav_hover(#f6d186);
+        }
+        .li_4:hover {
+          @include nav_hover(#8ac6d1);
+        }
+        .li_5:hover {
+          @include nav_hover(#ffb6b9);
+        }
+        .li_6:hover {
+          @include nav_hover(#4baea0);
+        }
+      }
+    }
+  }
+}

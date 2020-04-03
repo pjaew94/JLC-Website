@@ -1,0 +1,17 @@
+@import 'config';
+
+.carousel_container {
+  height: 60vh;
+  width: 100%;
+  @extend %center_flex;
+
+  .carousel {
+    height: 100%;
+    width: 65%;
+
+    img {
+      transform: translateY(-150px);
+     
+    }
+  }
+}

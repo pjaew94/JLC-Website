@@ -1,0 +1,232 @@
+@import 'config';
+
+.flower_container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .flower_text_container {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    margin-top: 4%;
+
+    .left_container {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+    .right_container {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text {
+      font-family: 'Nanum Pen Script', cursive;
+      font-size: 3.5rem;
+      height: auto;
+      width: 45%;
+      display: flex;
+      justify-content: left;
+      margin-bottom: 5%;
+    }
+
+    .header {
+      margin-left: 3%;
+      font-weight: bold;
+      font-size: 4rem;
+      cursor: pointer;
+    }
+
+    .line_1 {
+      margin-left: 15%;
+    }
+
+    .line_2 {
+      margin-left: 25%;
+    }
+
+    .line_3 {
+      margin-left: 35%;
+    }
+  }
+}
+
+.haiti_container {
+  height: 100%;
+  width: 100%;
+  @extend %center_flex;
+
+  .img_container {
+    height: 100%;
+    width: 60%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .haiti_spacer {
+    height: 100%;
+    width: 3%;
+    background: white;
+  }
+
+  .haiti_news_container {
+    height: 100%;
+    width: 37%;
+    background: white;
+    @extend %center_flex;
+    flex-direction: column;
+
+    .haiti_news {
+      height: 70%;
+      width: 100%;
+
+      .haiti_news_title {
+        height: 35%;
+        width: 100%;
+        border-bottom: 1px solid black;
+        margin-bottom: 5%;
+
+        .haiti_news_title_kor {
+          height: 50%;
+          font-family: 'Nanum Pen Script', cursive;
+          font-size: 3rem;
+        }
+      }
+        .haiti_news_title_eng {
+          height: 50%;
+          font-family: 'Raleway', sans-serif;
+          font-size: 1.2rem;
+          @extend %center_flex;
+        }
+
+        .haiti_news_text_kor {
+          height: 30%;
+          width: 100%;
+          font-family: 'Nanum Myeongjo', serif;
+          line-height: 1.3rem;
+       
+        }
+
+        .haiti_news_text_eng {
+          height: 30%;
+          width: 100%;
+          font-family: 'Raleway', sans-serif;
+        }
+    }
+
+    .haiti_button_container {
+      height: 50%;
+      width: 100%;
+      @extend %center_flex;
+
+      .donate_button {
+        @extend %center_flex;
+        flex-direction: column;
+        height: 70px;
+        width: 120px;
+        background: #ff8585;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        margin-top: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .donate_button:hover {
+        background: #ff5858;
+      }
+    }
+  }
+
+  
+}
+
+.covid_container {
+  height: 100%;
+  width: 100%;
+  @extend %center_flex;
+  background: white;
+
+  .covid_news_container {
+    height: 100%;
+    width: 45%;
+
+    .covid_title_container {
+      height: 25%;
+      width: 100%;
+      @extend %center_flex;
+      flex-direction: column;
+      border-bottom: 1px solid black;
+      margin-bottom: 5%;
+
+      .covid_title_kor {
+        height: 50%;
+        width: 100%;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 3rem;
+      }
+
+      .covid_title_eng {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2rem;
+      }
+    }
+
+    .covid_text_kor {
+      height: 30%;
+      width: 100%;
+      font-family: 'Nanum Myeongjo', serif;
+      line-height: 1.3rem;
+      // border-bottom: 1px solid black;
+      // padding-bottom: 20px;
+      text-align: left;
+
+    }
+
+    .covid_text_eng {
+      height: 30%;
+      width: 100%;
+      font-family: 'Raleway', sans-serif;
+      text-align: left;
+      padding-top: 5%;
+
+    }
+  }
+
+  .covid_spacer {
+    height: 100%;
+    width: 5%;
+    background: white;
+  }
+
+  .covid_svg_container {
+    height: 100%;
+    width: 50%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

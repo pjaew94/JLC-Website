@@ -1,0 +1,30 @@
+@import 'config';
+
+.footer_container {
+  height: 35vh;
+  width: 100%;
+  @extend %center_flex;
+
+  .footer_inner_container {
+    height: 100%;
+    width: 65%;
+    background: rgb(61, 61, 61);
+    @extend %space_evenly_flex;
+
+    .footer_info_container {
+      height: 90%;
+      width: 45%;
+      @extend %center_flex;
+      flex-direction: column;
+
+      .footer_text {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 25px;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 1.5rem;
+      }
+    }
+    
+  }
+}

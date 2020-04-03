@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://jlc_admin:Jlc123456@jlc-users-wpac7.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
+}
